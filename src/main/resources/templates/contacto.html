@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form action="/contacto" method="POST"
+          th:object="${contact}" id="formulario">
+
+        <input type="text"
+               th:field="*{subject}">
+
+        <input type="text"
+               th:field="*{email}">
+
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
